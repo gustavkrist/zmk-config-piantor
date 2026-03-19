@@ -241,7 +241,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
     //                      &trans &trans &trans    &trans &trans &trans
     compatible = "zmk,keymap";
     default_layer {
-      display-name = "QWERTY",
+      display-name = "QWERTY";
       bindings = <
         &trans &kp Q       &kp W       &kp E         &kp R           &kp T            &kp Y                    &kp U        &kp I        &kp O       &kp P         &trans
         &trans &hml LGUI A &hml LALT S &hml LCTRL D  &hml LSHFT F    &kp G            &kp H                    &hmr RSHFT J &hmr RCTRL K &hmr LALT L &hmr RGUI SQT &trans
@@ -250,7 +250,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       >;
     };
     number_layer {
-      display-name = "NUMBER",
+      display-name = "NUMBER";
       bindings = <
         &trans &kp LBKT  &kp N7 &kp N8  &kp N9 &kp RBKT    &trans                &to_DEF    &trans    &trans   &u_bootloader   &trans
         &trans &kp SEMI  &kp N4 &kp N5  &kp N6 &kp EQUAL   &trans                &kp RSHFT  &kp RCTRL &kp LALT &kp RGUI        &trans
@@ -259,7 +259,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       >;
     };
     symbol_layer {
-      display-name = "SYMBOL",
+      display-name = "SYMBOL";
       bindings = <
         &trans &kp LBRC  &kp AMPS &kp STAR  &kp LPAR  &kp RBRC    &trans                &to_DEF   &trans     &trans   &u_bootloader   &trans
         &trans &kp COLON &kp DLLR &kp PRCNT &kp CARET &kp PLUS    &trans                &kp RSHFT &kp RCTRL  &kp LALT &kp RGUI        &trans
@@ -268,7 +268,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       >;
     };
     navigation_layer {
-      display-name = "NAV",
+      display-name = "NAV";
       bindings = <
         &trans &u_bootloader &trans   &trans    &to_DEF   &trans    &kp LC(Y) &kp LC(V) &kp LC(C) &kp LC(X) &kp LC(Z) &trans
         &trans &kp LGUI      &kp LALT &kp LCTRL &kp LSHFT &trans    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans    &trans
@@ -277,7 +277,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       >;
     };
     function_layer {
-      display-name = "FUNCT",
+      display-name = "FUNCT";
       bindings = <
         &trans &u_bootloader &trans   &trans    &to_DEF   &trans    &kp PSCRN       &kp F7    &kp F8 &kp F9 &kp F12 &trans
         &trans &kp LGUI      &kp LALT &kp LCTRL &kp LSHFT &trans    &kp SLCK        &kp F4    &kp F5 &kp F6 &kp F11 &trans
@@ -286,7 +286,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       >;
     };
     media_layer {
-      display-name = "MEDIA",
+      display-name = "MEDIA";
       bindings = <
         &trans &u_bootloader &trans   &trans    &to_DEF   &trans    &rgb_ug RGB_TOG &trans      &trans       &trans       &trans      &trans
         &trans &kp LGUI      &kp LALT &kp LCTRL &kp LSHFT &trans    &u_ep_tog       &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT  &trans
