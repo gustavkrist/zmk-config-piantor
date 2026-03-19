@@ -294,5 +294,5 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
                                       &trans    &trans    &trans    &kp C_STOP      &kp C_PP    &kp C_MUTE
       >;
     };
-  }
-}
+  };
+};
