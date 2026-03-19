@@ -288,10 +288,10 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
     media_layer {
       display-name = "MEDIA",
       bindings = <
-        &trans &u_bootloader &trans   &trans    &to_DEF   &trans    &trans     &trans      &trans       &trans       &trans      &trans
-        &trans &kp LGUI      &kp LALT &kp LCTRL &kp LSHFT &trans    &u_ep_tog  &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT  &trans
-        &trans &trans        &trans   &trans    &to_MED   &trans    &u_out_tog &u_bt_sel_0 &u_bt_sel_1  &u_bt_sel_2  &u_bt_sel_3 &trans
-                                      &trans    &trans    &trans    &kp C_STOP &kp C_PP    &kp C_MUTE
+        &trans &u_bootloader &trans   &trans    &to_DEF   &trans    &rgb_ug RGB_TOG &trans      &trans       &trans       &trans      &trans
+        &trans &kp LGUI      &kp LALT &kp LCTRL &kp LSHFT &trans    &u_ep_tog       &kp C_PREV  &kp C_VOL_DN &kp C_VOL_UP &kp C_NEXT  &trans
+        &trans &trans        &trans   &trans    &to_MED   &trans    &u_out_tog      &u_bt_sel_0 &u_bt_sel_1  &u_bt_sel_2  &u_bt_sel_3 &trans
+                                      &trans    &trans    &trans    &kp C_STOP      &kp C_PP    &kp C_MUTE
       >;
     };
   }
