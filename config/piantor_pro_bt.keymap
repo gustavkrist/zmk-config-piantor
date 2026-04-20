@@ -99,20 +99,20 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
 //                | 36 | 37 | 38 |   | 39 | 40 | 41 |
 
 / {
-    chosen {
-        zmk,physical-layout = &default_layout;
-    };
+  chosen {
+    zmk,physical-layout = &default_layout;
+  };
 };
 
 &mmv {
-    acceleration-exponent = <1>;
-    time-to-max-speed-ms = <500>;
-    delay-ms = <0>;
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <500>;
+  delay-ms = <0>;
 };
 
 &msc {
-    acceleration-exponent = <1>;
-    time-to-max-speed-ms = <500>;
+  acceleration-exponent = <1>;
+  time-to-max-speed-ms = <500>;
 };
 
 / {
@@ -171,6 +171,14 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       flavor = "balanced";
       tapping-term-ms = <TAPPING_TERM>;
       bindings = <&kp>, <&u_sticky_shft_caps_word>;
+    };
+    mmvs: mouse_move_slow_accel {
+      compatible = "zmk,behavior-input-two-axis";
+      #binding-cells = <1>;
+      x-input-code = <INPUT_REL_X>;
+      y-input-code = <INPUT_REL_Y>;
+      time-to-max-speed-ms = <1000>;
+      acceleration-exponent = <1>;
     };
   };
   combos {
@@ -312,10 +320,10 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
     mouse_layer {
       display-name = "MOUSE";
       bindings = <
-        &trans &trans   &trans   &trans    &trans    &trans    &trans    &mmv MOVE_X(-750) &mmv MOVE_Y(750) &mmv MOVE_Y(-750) &mmv MOVE_X(750) &trans
-        &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
-        &trans &trans   &trans   &trans    &trans    &trans    &trans    &msc SCRL_LEFT    &msc SCRL_DOWN   &msc SCRL_UP      &msc SCRL_RIGHT  &trans
-                                 &trans    &trans    &trans    &mkp MB2  &mkp MB1          &mkp MB3
+        &trans &trans   &trans   &trans    &trans    &trans    &trans    &mmv MOVE_LEFT     &mmv MOVE_DOWN    &mmv MOVE_UP       &mmv MOVE_RIGHT   &trans
+        &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans    &mmvs MOVE_X(-750) &mmvs MOVE_Y(750) &mmvs MOVE_Y(-750) &mmvs MOVE_X(750) &trans
+        &trans &trans   &trans   &trans    &trans    &trans    &trans    &msc SCRL_LEFT     &msc SCRL_DOWN    &msc SCRL_UP       &msc SCRL_RIGHT   &trans
+                                 &trans    &trans    &trans    &mkp MB2  &mkp MB1           &mkp MB3
       >;
     };
     function_layer {
