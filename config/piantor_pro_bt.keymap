@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1250
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 2000
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 #include <behaviors.dtsi>
@@ -106,14 +106,13 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
 
 &mmv {
     acceleration-exponent = <1>;
-    time-to-max-speed-ms = <1500>;
+    time-to-max-speed-ms = <500>;
     delay-ms = <0>;
 };
 
 &msc {
     acceleration-exponent = <1>;
-    time-to-max-speed-ms = <5000>;
-    delay-ms = <0>;
+    time-to-max-speed-ms = <500>;
 };
 
 / {
@@ -313,10 +312,10 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
     mouse_layer {
       display-name = "MOUSE";
       bindings = <
-        &trans &trans   &trans   &trans    &trans    &trans    &trans    &trans         &trans         &trans       &trans          &trans
-        &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
-        &trans &trans   &trans   &trans    &trans    &trans    &trans    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_UP &msc SCRL_RIGHT &trans
-                                 &trans    &trans    &trans    &mkp MB2  &mkp MB1       &mkp MB3
+        &trans &trans   &trans   &trans    &trans    &trans    &trans    &mmv MOVE_X(-750) &mmv MOVE_Y(750) &mmv MOVE_Y(-750) &mmv MOVE_X(750) &trans
+        &trans &kp LGUI &kp LALT &kp LCTRL &kp LSHFT &trans    &trans    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_UP      &mmv MOVE_RIGHT  &trans
+        &trans &trans   &trans   &trans    &trans    &trans    &trans    &msc SCRL_LEFT    &msc SCRL_DOWN   &msc SCRL_UP      &msc SCRL_RIGHT  &trans
+                                 &trans    &trans    &trans    &mkp MB2  &mkp MB1          &mkp MB3
       >;
     };
     function_layer {
