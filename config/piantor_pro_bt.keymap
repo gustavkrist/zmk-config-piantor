@@ -105,13 +105,13 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
 };
 
 &mmv {
-    acceleration_component = <1>;
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <1500>;
     delay-ms = <0>;
 };
 
 &msc {
-    acceleration_component = <1>;
+    acceleration-exponent = <1>;
     time-to-max-speed-ms = <5000>;
     delay-ms = <0>;
 };
@@ -181,78 +181,91 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       require-prior-idle-ms = <120>;
       key-positions = <4 5>;
       bindings = <&kp LBKT>;
+      layers = <DEF NUM SYM>;
     };
     combo_rbkt {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <6 7>;
       bindings = <&kp RBKT>;
+      layers = <DEF NUM SYM>;
     };
     combo_lpar {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <16 17>;
       bindings = <&kp LPAR>;
+      layers = <DEF NUM SYM>;
     };
     combo_rpar {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <18 19>;
       bindings = <&kp RPAR>;
+      layers = <DEF NUM SYM>;
     };
     combo_lbrc {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <28 29>;
       bindings = <&kp LBRC>;
+      layers = <DEF NUM SYM>;
     };
     combo_rbrc {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <30 31>;
       bindings = <&kp RBRC>;
+      layers = <DEF NUM SYM>;
     };
     combo_under {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <31 32>;
       bindings = <&kp UNDER>;
+      layers = <DEF NUM SYM>;
     };
     combo_dash {
       timeout-ms = <30>;
       require-prior-idle-ms = <120>;
       key-positions = <7 8>;
       bindings = <&kp MINUS>;
+      layers = <DEF NUM SYM>;
     };
     combo_semi {
       timeout-ms = <30>;
       require-prior-idle-ms = <120>;
       key-positions = <2 3>;
       bindings = <&kp SEMI>;
+      layers = <DEF NUM SYM>;
     };
     combo_colon {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <26 27>;
       bindings = <&kp SEMI>;
+      layers = <DEF NUM SYM>;
     };
     combo_bslh {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <20 21>;
       bindings = <&kp BSLH>;
+      layers = <DEF NUM SYM>;
     };
     combo_equal {
       timeout-ms = <30>;
       require-prior-idle-ms = <120>;
       key-positions = <3 4>;
       bindings = <&kp EQUAL>;
+      layers = <DEF NUM SYM>;
     };
     combo_plus {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <27 28>;
       bindings = <&kp PLUS>;
+      layers = <DEF NUM SYM>;
     };
   };
   keymap {
