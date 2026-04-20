@@ -108,13 +108,13 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
     acceleration_component = <1>;
     time-to-max-speed-ms = <1500>;
     delay-ms = <0>;
-}
+};
 
 &msc {
     acceleration_component = <1>;
     time-to-max-speed-ms = <5000>;
     delay-ms = <0>;
-}
+};
 
 / {
   behaviors {
