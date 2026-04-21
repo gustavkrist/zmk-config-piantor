@@ -278,6 +278,13 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       bindings = <&kp PLUS>;
       layers = <DEF NUM SYM>;
     };
+    combo_esc {
+      timeout-ms = <50>;
+      require-prior-idle-ms = <120>;
+      key-positions = <19 20>;
+      bindings = <&kp ESC>;
+      layers = <DEF NUM SYM>;
+    };
   };
   keymap {
     // &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
