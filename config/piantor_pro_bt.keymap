@@ -181,6 +181,10 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       acceleration-exponent = <1>;
     };
   };
+  mmvs_input_listener: mmvs_input_listener {
+        compatible = "zmk,input-listener";
+        device = <&mmvs>;
+  };
   combos {
     compatible = "zmk,combos";
     combo_lbkt {
