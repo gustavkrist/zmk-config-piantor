@@ -254,7 +254,7 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
       key-positions = <26 27>;
-      bindings = <&kp SEMI>;
+      bindings = <&kp COLON>;
       layers = <DEF NUM SYM>;
     };
     combo_bslh {
