@@ -285,6 +285,34 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       bindings = <&kp PLUS>;
       layers = <DEF NUM SYM>;
     };
+    combo_backtick {
+      timeout-ms = <50>;
+      require-prior-idle-ms = <120>;
+      key-positions = <1 2>;
+      bindings = <&kp GRAVE>;
+      layers = <DEF NUM SYM>;
+    };
+    combo_exclamation {
+      timeout-ms = <50>;
+      require-prior-idle-ms = <120>;
+      key-positions = <25 26>;
+      bindings = <&kp EXCL>;
+      layers = <DEF NUM SYM>;
+    };
+    combo_caret {
+      timeout-ms = <50>;
+      require-prior-idle-ms = <120>;
+      key-positions = <9 10>;
+      bindings = <&kp CARET>;
+      layers = <DEF NUM SYM>;
+    };
+    combo_dollar {
+      timeout-ms = <50>;
+      require-prior-idle-ms = <120>;
+      key-positions = <33 34>;
+      bindings = <&kp DLLR>;
+      layers = <DEF NUM SYM>;
+    };
   };
   keymap {
     // &trans &trans &trans &trans &trans &trans    &trans &trans &trans &trans &trans &trans
