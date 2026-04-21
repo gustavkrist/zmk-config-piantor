@@ -258,10 +258,17 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       layers = <DEF NUM SYM>;
     };
     combo_bslh {
+      timeout-ms = <30>;
+      require-prior-idle-ms = <120>;
+      key-positions = <8 9>;
+      bindings = <&kp BSLH>;
+      layers = <DEF NUM SYM>;
+    };
+    combo_pipe {
       timeout-ms = <50>;
       require-prior-idle-ms = <120>;
-      key-positions = <20 21>;
-      bindings = <&kp BSLH>;
+      key-positions = <32 33>;
+      bindings = <&kp PIPE>;
       layers = <DEF NUM SYM>;
     };
     combo_equal {
@@ -276,13 +283,6 @@ U_SHIFT_FUNCTION(u_sticky_shft_caps_word, &skq LSHFT, &caps_word)
       require-prior-idle-ms = <120>;
       key-positions = <27 28>;
       bindings = <&kp PLUS>;
-      layers = <DEF NUM SYM>;
-    };
-    combo_esc {
-      timeout-ms = <50>;
-      require-prior-idle-ms = <120>;
-      key-positions = <19 20>;
-      bindings = <&kp ESC>;
       layers = <DEF NUM SYM>;
     };
   };
